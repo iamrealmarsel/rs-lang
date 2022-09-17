@@ -1,18 +1,34 @@
 @use 'src/sass/abstracts/mixins' as *;
 
 .title {
-  @include roboto($fs: 4rem, $ff: var(--ff-roboto-bold), $fw: 700, $color: var(--primary));
-  padding: 1.5rem 0 4rem;
+  @include roboto(
+    $ff: var(--ff-roboto-regular),
+    $fs: 4rem,
+    $fw: 700,
+    $lh: 1.1,
+    $color: var(--accent)
+  );
+  padding: 5rem 2rem 4rem;
   text-align: center;
 
-  @include media-tablet {
-    font-size: 3rem;
-    padding: 1.5rem 0 2rem;
+  @include media-mobile {
+    font-size: 3.5rem;
   }
 }
 
 .subtitle {
-  padding: 1rem;
+  @include roboto(
+    $ff: var(--ff-roboto-regular),
+    $fs: 2.4rem,
+    $fw: 400,
+    $lh: 1.5,
+    $color: var(--secundary-dark)
+  );
+  text-align: center;
+
+  @include media-mobile {
+    font-size: 2.2rem;
+  }
 }
 
 .wrapper {
@@ -22,7 +38,7 @@
 }
 
 .link {
-  @include roboto($fs: 1.6rem, $ff: var(--ff-roboto-bold), $fw: 400);
+  @include roboto($ff: var(--ff-roboto-regular), $fs: 2.4rem, $fw: 400, $lh: 1.5);
   text-decoration: underline;
   background-color: transparent;
 

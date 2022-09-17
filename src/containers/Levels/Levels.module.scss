@@ -5,14 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 13rem 2rem 24rem 2rem;
-  gap: 11rem;
-  @include media-tablet {
-    padding-top: 10rem;
-  }
-  @include media-mobile {
-    gap: 5rem;
-  }
+  padding: 5rem 2rem;
+  gap: 5rem;
 }
 
 .cards {
@@ -32,8 +26,8 @@
     $lh: 1.5,
     $color: var(--primary)
   );
-
   text-align: center;
+
   @include media-mobile {
     font-size: 3.5rem;
   }
