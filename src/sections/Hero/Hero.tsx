@@ -7,8 +7,7 @@ const Hero: React.FC = () => (
     <div className={styles.hero__info}>
       <h1 className={styles.hero__title}>Английский онлайн</h1>
       <p className={styles.hero__text}>
-        Приложение для изучения английского языка в игровой форме. Изучай язык легко с Language
-        Learn
+        Приложение для изучения английского языка в игровой форме. Изучай язык легко с RS Lang.
       </p>
     </div>
     <div>
